@@ -1,5 +1,6 @@
 package com.kk.taurus.avplayer.utils;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -56,7 +57,7 @@ public class RandomUtils {
     }
 
     public static int getRandomInt(int min, int max){
-        return new Random().nextInt(max - min + 1) + min;
+        return new SecureRandom().nextInt(max - min + 1) + min;
     }
 
 }
